@@ -73,7 +73,7 @@ static NSString *const kImagePickerCellReuseIdentifier = @"co.oceanlabs.ps.kImag
     layout.minimumLineSpacing           = 1.0;
     layout.footerReferenceSize          = CGSizeMake(0, 0);
     self.collectionView.collectionViewLayout = layout;
-    self.collectionView.allowsMultipleSelection = NO;
+    self.collectionView.allowsMultipleSelection = YES;
     
     [self.collectionView registerClass:[InstagramSupplementaryView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:kSupplementaryViewFooterReuseIdentifier];
     [self.collectionView registerClass:[OLInstagramImagePickerCell class] forCellWithReuseIdentifier:kImagePickerCellReuseIdentifier];
