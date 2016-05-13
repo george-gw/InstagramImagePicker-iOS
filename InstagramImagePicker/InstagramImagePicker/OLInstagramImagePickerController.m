@@ -60,7 +60,7 @@ static NSString *const kImagePickerCellReuseIdentifier = @"co.oceanlabs.ps.kImag
     [super viewDidLoad];
     
     //self.title = NSLocalizedString(@"Add Photos", @"");
-    self.title = NSLocalizedString(@"Select photo", @"");
+    self.title = NSLocalizedString(@"Select Photo", @"");
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Done", @"") style:UIBarButtonItemStylePlain target:self action:@selector(onButtonDoneClicked)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Logout", @"") style:UIBarButtonItemStylePlain target:self action:@selector(onButtonLogoutClicked)];
     
@@ -238,7 +238,7 @@ static NSString *const kImagePickerCellReuseIdentifier = @"co.oceanlabs.ps.kImag
     if (indexPaths.count == 0)
     {
         //self.title = NSLocalizedString(@"Add Photos", @"");
-        self.title = NSLocalizedString(@"Select photo", @"");
+        self.title = NSLocalizedString(@"Select Photo", @"");
         ((UILabel *)self.navigationItem.titleView).text= self.title;
         [((UILabel *)self.navigationItem.titleView) sizeToFit];
         return;
