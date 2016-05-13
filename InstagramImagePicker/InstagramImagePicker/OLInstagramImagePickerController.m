@@ -72,7 +72,7 @@ static NSString *const kImagePickerCellReuseIdentifier = @"co.oceanlabs.ps.kImag
     layout.minimumLineSpacing           = 1.0;
     layout.footerReferenceSize          = CGSizeMake(0, 0);
     self.collectionView.collectionViewLayout = layout;
-    self.collectionView.allowsMultipleSelection = YES;
+    self.collectionView.allowsMultipleSelection = NO;
     
     [self.collectionView registerClass:[InstagramSupplementaryView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:kSupplementaryViewFooterReuseIdentifier];
     [self.collectionView registerClass:[OLInstagramImagePickerCell class] forCellWithReuseIdentifier:kImagePickerCellReuseIdentifier];
@@ -236,7 +236,8 @@ static NSString *const kImagePickerCellReuseIdentifier = @"co.oceanlabs.ps.kImag
     // Reset title to group name
     if (indexPaths.count == 0)
     {
-        self.title = NSLocalizedString(@"Add Photos", @"");
+        //self.title = NSLocalizedString(@"Add Photos", @"");
+        self.title = NSLocalizedString(@"Select photo", @"");
         ((UILabel *)self.navigationItem.titleView).text= self.title;
         [((UILabel *)self.navigationItem.titleView) sizeToFit];
         return;
